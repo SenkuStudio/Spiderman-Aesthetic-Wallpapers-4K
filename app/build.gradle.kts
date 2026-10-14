@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.walli.iphonewallpaper"
+    namespace = "com.walli.spidermanwallpaper"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.walli.iphonewallpaper"
+        applicationId = "com.walli.spidermanwallpaper"
         minSdk = 24
         targetSdk = 36
         versionCode = 7
@@ -42,6 +42,7 @@ android {
         buildConfigField("String", "ADMOB_APP_OPEN", "\"${localProperties.getProperty("ADMOB_APP_OPEN") ?: ""}\"")
         buildConfigField("String", "ADMOB_INTERSTITIAL_HOME", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_HOME") ?: ""}\"")
         buildConfigField("String", "ADMOB_INTERSTITIAL_CATEGORY", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_CATEGORY") ?: ""}\"")
+        buildConfigField("String", "ADMOB_INTERSTITIAL_DOWNLOAD", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_DOWNLOAD") ?: ""}\"")
         buildConfigField("String", "ADMOB_INTERSTITIAL_SET_WALLPAPER", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_SET_WALLPAPER") ?: ""}\"")
 
         // Rewarded IDs
@@ -51,6 +52,7 @@ android {
         buildConfigField("String", "ADMOB_REWARDED_DOWNLOAD", "\"${localProperties.getProperty("ADMOB_REWARDED_DOWNLOAD") ?: ""}\"")
         buildConfigField("String", "ADMOB_REWARDED_PRO_TOOLS", "\"${localProperties.getProperty("ADMOB_REWARDED_PRO_TOOLS") ?: ""}\"")
         buildConfigField("String", "ADMOB_REWARDED_SET_WALLPAPER", "\"${localProperties.getProperty("ADMOB_REWARDED_SET_WALLPAPER") ?: ""}\"")
+        buildConfigField("String", "ADMOB_REWARDED_EXTRA", "\"${localProperties.getProperty("ADMOB_REWARDED_EXTRA") ?: ""}\"")
 
         // Native IDs
         buildConfigField("String", "ADMOB_NATIVE_HOME", "\"${localProperties.getProperty("ADMOB_NATIVE_HOME") ?: ""}\"")

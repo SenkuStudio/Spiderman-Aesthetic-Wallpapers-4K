@@ -15,5 +15,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Iphone 18"
+rootProject.name = "Spiderman Wallpapers"
 include(":app")
