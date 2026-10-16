@@ -8,15 +8,15 @@ plugins {
 }
 
 android {
-    namespace = "com.walli.spidermanwallpaper"
+    namespace = "com.walli.spidermanaesthetic"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.walli.spidermanwallpaper"
+        applicationId = "com.walli.spidermanaesthetic"
         minSdk = 24
         targetSdk = 36
-        versionCode = 7
-        versionName = "7.0.0"
+        versionCode = 107
+        versionName = "107.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -44,6 +44,7 @@ android {
         buildConfigField("String", "ADMOB_INTERSTITIAL_CATEGORY", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_CATEGORY") ?: ""}\"")
         buildConfigField("String", "ADMOB_INTERSTITIAL_DOWNLOAD", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_DOWNLOAD") ?: ""}\"")
         buildConfigField("String", "ADMOB_INTERSTITIAL_SET_WALLPAPER", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_SET_WALLPAPER") ?: ""}\"")
+        buildConfigField("String", "ADMOB_INTERSTITIAL_EXTRA", "\"${localProperties.getProperty("ADMOB_INTERSTITIAL_EXTRA") ?: ""}\"")
 
         // Rewarded IDs
         buildConfigField("String", "ADMOB_REWARDED_HOME", "\"${localProperties.getProperty("ADMOB_REWARDED_HOME") ?: ""}\"")

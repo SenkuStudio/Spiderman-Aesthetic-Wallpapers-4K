@@ -40,13 +40,13 @@ const clamp = (value: number, min: number, max: number) => Math.min(max, Math.ma
 
 const normalizeSort = (sort: string | null): string => {
   switch ((sort || "latest").toLowerCase()) {
-    case "popular":
-      return "downloads DESC, created_at DESC";
     case "trending":
-      return "trending_score DESC, downloads DESC, created_at DESC";
+      return "downloads DESC, created_at DESC";
+    case "random":
+      return "RANDOM()";
     case "latest":
     default:
-      return "category ASC, created_at DESC";
+      return "created_at DESC";
   }
 };
 
